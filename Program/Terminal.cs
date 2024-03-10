@@ -26,6 +26,9 @@ namespace ColorProgPad
                 case "exit":
                     Environment.Exit(0);
                     break;
+                case "history":
+                    DisplayHistory();
+                    break;
                 default:
                     Console.WriteLine("Неизвестная команда. Введите 'help' для списка команд.");
                     break;
@@ -37,6 +40,16 @@ namespace ColorProgPad
             Console.WriteLine("Список команд:");
             Console.WriteLine("- help: Выводит список команд.");
             Console.WriteLine("- exit: Завершает работу терминала.");
+            Console.WriteLine("- history: Выводит историю введенных команд.");
+        }
+
+        private void DisplayHistory()
+        {
+            Console.WriteLine("История команд:");
+            foreach (var command in commandHistory)
+            {
+                Console.WriteLine(command);
+            }
         }
     }
 
