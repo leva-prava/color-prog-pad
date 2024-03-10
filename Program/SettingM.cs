@@ -15,7 +15,10 @@ namespace ColorProgPad
 
         public string GetSetting(string key)
         {
-            
+            if (settings.ContainsKey(key))
+                return settings[key];
+            else
+                return "Не установлено";
         }
     }
 }
