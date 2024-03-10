@@ -15,12 +15,13 @@ namespace ColorProgPad
 
          public Theme GetCurrentTheme()
          {
-
+            return currentTheme;
          }
 
          public void ApplyTheme(Theme theme)
          {
-            
+            currentTheme = theme;
+            Console.WriteLine("Тема успешно изменена на: " + theme);
          }
     }
 }
