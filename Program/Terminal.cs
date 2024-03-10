@@ -18,8 +18,18 @@ namespace ColorProgPad
 
         private void ProcessCommand(string command)
         {
-            // Реализация обработки команд
-            Console.WriteLine($"Вы ввели команду: {command}");
+            switch (command.ToLower())
+            {
+                case "help":
+                    DisplayHelp();
+                    break;
+                case "exit":
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Неизвестная команда. Введите 'help' для списка команд.");
+                    break;
+            }
         }
     }
 
