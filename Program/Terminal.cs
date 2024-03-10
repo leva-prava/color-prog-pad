@@ -10,7 +10,7 @@ namespace ColorProgPad
 
             while (true)
             {
-                Console.Write("<--> ");
+                Console.Write("> ");
                 string input = Console.ReadLine();
                 ProcessCommand(input);
             }
@@ -20,13 +20,13 @@ namespace ColorProgPad
         {
             switch (command.ToLower())
             {
-                case "help++":
+                case "help":
                     DisplayHelp();
                     break;
                 case "exit":
                     Environment.Exit(0);
                     break;
-                case "history cmd":
+                case "history":
                     DisplayHistory();
                     break;
                 default:
