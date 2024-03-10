@@ -31,6 +31,13 @@ namespace ColorProgPad
                     break;
             }
         }
+
+        private void DisplayHelp()
+        {
+            Console.WriteLine("Список команд:");
+            Console.WriteLine("- help: Выводит список команд.");
+            Console.WriteLine("- exit: Завершает работу терминала.");
+        }
     }
 
 }
