@@ -9,7 +9,8 @@ namespace ColorProgPad
 
         public void SetSetting(string key, string value)
         {
-            
+            settings[key] = value;
+            Console.WriteLine($"Настройка \"{key}\" установлена на: {value}");
         }
 
         public string GetSetting(string key)
