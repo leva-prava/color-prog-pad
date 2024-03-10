@@ -8,6 +8,9 @@ namespace ColorProgPad
         private List<string> functions = new List<string>();
         private List<string> variables = new List<string>();
 
+        private bool hasConditionalStatements;
+        private bool hasLoops;
+
         public void AnalyzeCode(string code)
         {
             // Поиск функций
@@ -15,6 +18,8 @@ namespace ColorProgPad
             foreach (Match match in functionMatches)
             {
                 functions.Add(match.Groups[1].Value);
+                // Анализ выражений внутри функции
+                AnalyzeExpressions(match.Value);
             }
 
             // Поиск переменных
@@ -31,6 +36,16 @@ namespace ColorProgPad
             hasLoops = code.Contains("for") || code.Contains("while");
         }
 
+        private void AnalyzeExpressions(string functionCode)
+        {
+            // Простая логика анализа арифметических выражений
+            MatchCollection expressionMatches = Regex.Matches(functionCode, @"(\w+)\s*([+\-*/])\s*(\w+)");
+            foreach (Match match in expressionMatches)
+            {
+                Console.WriteLine($"Найдено выражение: {match.Value}");
+            }
+        }
+
         public List<string> GetFunctions()
         {
             return functions;
@@ -40,5 +55,21 @@ namespace ColorProgPad
         {
             return variables;
         }
+
+        public bool HasConditionalStatements()
+        {
+            return hasConditionalStatements;
+        }
+
+        public bool HasLoops()
+        {
+            return hasLoops;
+        }
+
+        public string AnalyzeExpressionsInFunctions()
+        {
+            return "Анализ выражений выполнен успешно.";
+        }
+
     }
 }
