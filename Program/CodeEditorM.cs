@@ -1,11 +1,12 @@
 using System;
 using System.Windows.Forms;
+using ScintillaNET;
 
 namespace ColorProgPad
 {
     public class CodeEditor : Form
     {
-        private TextBox codeTextBox;
+        private Scintilla codeEditor;
 
         public CodeEditorForm()
         {
@@ -15,17 +16,15 @@ namespace ColorProgPad
 
         private void InitializeCodeEditor()
         {
-            codeTextBox = new TextBox();
-            codeTextBox.Multiline = true;
-            codeTextBox.ScrollBars = ScrollBars.Both;
-            codeTextBox.Dock = DockStyle.Fill;
+            codeEditor = new Scintilla();
+            codeEditor.Dock = DockStyle.Fill;
 
-            //Необходимо добавить обработчики событий...
-
-            Controls.Add(codeTextBox);
+            // Настройка Scintilla для поддержки языка C#
+            codeEditor.ConfigurationManager.Language = "cs";
+            Controls.Add(codeEditor);
         }
 
-
+         //Обработчики событий
 
         [STAThread]
         static void Main()
