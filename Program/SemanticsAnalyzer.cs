@@ -10,18 +10,25 @@ namespace ColorProgPad
 
         public void AnalyzeCode(string code)
         {
-             if (code.Contains("function"))
+            // Поиск функций
+            MatchCollection functionMatches = Regex.Matches(code, @"function\s+(\w+)");
+            foreach (Match match in functionMatches)
             {
-                //пример добавления функции анализатором
-                functions.Add("add");
+                functions.Add(match.Groups[1].Value);
             }
 
-            if (code.Contains("var"))
+            // Поиск переменных
+            MatchCollection variableMatches = Regex.Matches(code, @"\bvar\s+(\w+)");
+            foreach (Match match in variableMatches)
             {
-                // пример добавления переменной анализатором
-                variables.Add("a");
-                variables.Add("b");
+                variables.Add(match.Groups[1].Value);
             }
+
+            // Проверка наличия условных операторов
+            hasConditionalStatements = code.Contains("if");
+
+            // Проверка наличия циклов
+            hasLoops = code.Contains("for") || code.Contains("while");
         }
 
         public List<string> GetFunctions()
