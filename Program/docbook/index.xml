@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>ColorProgPad</title>
+    </info>
+    <xi:include href="md__d_e_s_c_r_i_p_t_i_o_n.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespace_color_prog_pad.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_color_prog_pad_1_1_code_editor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_color_prog_pad_1_1_search_m.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_color_prog_pad_1_1_semantics_analyzer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_color_prog_pad_1_1_setting_m.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_color_prog_pad_1_1_terminal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_color_prog_pad_1_1_theme_management_m.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="_search_m_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_semantics_analyzer_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_setting_m_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_terminal_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_theme_management_m_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

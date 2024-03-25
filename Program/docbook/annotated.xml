@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_color_prog_pad_1_1_code_editor">ColorProgPad.CodeEditor</link>
+<para>Представляет основную форму редактора кода </para>
+<link linkend="_class_color_prog_pad_1_1_search_m">ColorProgPad.SearchM</link>
+<para>Класс для отвечающий за поиск и замену текста </para>
+<link linkend="_class_color_prog_pad_1_1_semantics_analyzer">ColorProgPad.SemanticsAnalyzer</link>
+<para>Представляет класс для анализа семантики кода </para>
+<link linkend="_class_color_prog_pad_1_1_setting_m">ColorProgPad.SettingM</link>
+<para>Представляет класс для работы с настройками </para>
+<link linkend="_class_color_prog_pad_1_1_terminal">ColorProgPad.Terminal</link>
+<para>Представляет класс для работы с терминалом </para>
+<link linkend="_class_color_prog_pad_1_1_theme_management_m">ColorProgPad.ThemeManagementM</link>
+<para>Представляет менеджер тем </para>
+</section>

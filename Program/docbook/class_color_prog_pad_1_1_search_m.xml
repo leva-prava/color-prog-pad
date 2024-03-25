@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_color_prog_pad_1_1_search_m" xml:lang="en-US">
+<title>ColorProgPad.SearchM Class Reference</title>
+<indexterm><primary>ColorProgPad.SearchM</primary></indexterm>
+<para>
+
+<para>Класс для отвечающий за поиск и замену текста. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_color_prog_pad_1_1_search_m_1a5daf50e4e0f1f78adfa31c7853512a8d">Search</link> (string code, string searchTerm, bool caseSensitive=false)</para>
+
+<para>Осуществляет поиск заданной строки в коде. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_color_prog_pad_1_1_search_m_1a2d7d87fd26a1b72a6fc43984abce3611">Replace</link> (string code, string searchTerm, string replacement)</para>
+
+<para>Заменяет все вхождения заданного текста текстом-заменой в коде. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_color_prog_pad_1_1_search_m_1ac03f1379e19a282890dc3ad5765e0ecc">ReplaceUsingRegex</link> (string code, string pattern, string replacement)</para>
+
+<para>Заменяет все вхождения заданного регулярного выражения заменой в предоставленном коде. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_color_prog_pad_1_1_search_m_1a3b942ce1c3a64c0a6953b9533bdcb455">CountOccurrences</link> (string code, string searchTerm, bool caseSensitive=false)</para>
+
+<para>Подсчитывает количество вхождений заданного текста в предоставленном коде. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_color_prog_pad_1_1_search_m_1a725af3858510f1ca9db0b1f434b3a886">DisplayContext</link> (string code, string searchTerm, int contextLength)</para>
+
+<para>Отображает контекст вокруг вхождений заданного текста в предоставленном коде. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс для отвечающий за поиск и замену текста. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_color_prog_pad_1_1_search_m_1a3b942ce1c3a64c0a6953b9533bdcb455"/><section>
+    <title>CountOccurrences()</title>
+<indexterm><primary>CountOccurrences</primary><secondary>ColorProgPad.SearchM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SearchM</primary><secondary>CountOccurrences</secondary></indexterm>
+<para><computeroutput>int ColorProgPad.SearchM.CountOccurrences (string code, string searchTerm, bool caseSensitive = <computeroutput>false</computeroutput>
+)</computeroutput></para><para>
+
+<para>Подсчитывает количество вхождений заданного текста в предоставленном коде. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>code</entry><entry>
+<para>Код, в котором осуществляется поиск. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>searchTerm</entry><entry>
+<para>Текст, который необходимо найти. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>caseSensitive</entry><entry>
+<para>Определяет, должен ли поиск быть регистро-зависимым. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Количество вхождений термина. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_search_m_1a725af3858510f1ca9db0b1f434b3a886"/><section>
+    <title>DisplayContext()</title>
+<indexterm><primary>DisplayContext</primary><secondary>ColorProgPad.SearchM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SearchM</primary><secondary>DisplayContext</secondary></indexterm>
+<para><computeroutput>string ColorProgPad.SearchM.DisplayContext (string code, string searchTerm, int contextLength)</computeroutput></para><para>
+
+<para>Отображает контекст вокруг вхождений заданного текста в предоставленном коде. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>code</entry><entry>
+<para>Код, в котором осуществляется поиск. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>searchTerm</entry><entry>
+<para>Текст, который необходимо найти. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>contextLength</entry><entry>
+<para>Длина контекста вокруг каждого вхождения. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Контекст вокруг каждого вхождения термина. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_search_m_1a2d7d87fd26a1b72a6fc43984abce3611"/><section>
+    <title>Replace()</title>
+<indexterm><primary>Replace</primary><secondary>ColorProgPad.SearchM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SearchM</primary><secondary>Replace</secondary></indexterm>
+<para><computeroutput>string ColorProgPad.SearchM.Replace (string code, string searchTerm, string replacement)</computeroutput></para><para>
+
+<para>Заменяет все вхождения заданного текста текстом-заменой в коде. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>code</entry><entry>
+<para>Код, в котором выполняется замена. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>searchTerm</entry><entry>
+<para>Текст, который необходимо заменить. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>replacement</entry><entry>
+<para>Строка, которой необходимо заменить указанный текст. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Код с примененными заменами. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_search_m_1ac03f1379e19a282890dc3ad5765e0ecc"/><section>
+    <title>ReplaceUsingRegex()</title>
+<indexterm><primary>ReplaceUsingRegex</primary><secondary>ColorProgPad.SearchM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SearchM</primary><secondary>ReplaceUsingRegex</secondary></indexterm>
+<para><computeroutput>string ColorProgPad.SearchM.ReplaceUsingRegex (string code, string pattern, string replacement)</computeroutput></para><para>
+
+<para>Заменяет все вхождения заданного регулярного выражения заменой в предоставленном коде. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>code</entry><entry>
+<para>Код, в котором выполняется замена. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pattern</entry><entry>
+<para>Регулярное выражение, которое необходимо найти. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>replacement</entry><entry>
+<para>Строка, которой необходимо заменить вхождения регулярного выражения. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Код с примененными заменами. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_search_m_1a5daf50e4e0f1f78adfa31c7853512a8d"/><section>
+    <title>Search()</title>
+<indexterm><primary>Search</primary><secondary>ColorProgPad.SearchM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SearchM</primary><secondary>Search</secondary></indexterm>
+<para><computeroutput>string ColorProgPad.SearchM.Search (string code, string searchTerm, bool caseSensitive = <computeroutput>false</computeroutput>
+)</computeroutput></para><para>
+
+<para>Осуществляет поиск заданной строки в коде. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>code</entry><entry>
+<para>Код, в котором осуществляется поиск. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>searchTerm</entry><entry>
+<para>Текст, который необходимо найти. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>caseSensitive</entry><entry>
+<para>Определяет, должен ли поиск быть регистро-зависимым. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Сообщение о том, найден ли текст. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__search_m_8cs">SearchM.cs</link></section>
+</section>

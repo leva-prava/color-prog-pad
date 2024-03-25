@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__semantics_analyzer_8cs" xml:lang="en-US">
+<title>SemanticsAnalyzer.cs File Reference</title>
+<indexterm><primary>SemanticsAnalyzer.cs</primary></indexterm>
+<para>
+
+<para>Содержит реализацию класса SemanticsAnalyzer. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_semantics_analyzer">ColorProgPad.SemanticsAnalyzer</link></para>
+
+<para>Представляет класс для анализа семантики кода. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Содержит реализацию класса SemanticsAnalyzer. </para>
+</section>
+</section>

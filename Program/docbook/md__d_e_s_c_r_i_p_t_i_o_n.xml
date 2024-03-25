@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__d_e_s_c_r_i_p_t_i_o_n" xml:lang="en-US">
+<title>Назначение</title>
+<indexterm><primary>Назначение</primary></indexterm>
+
+<para><anchor xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md0"/>Данная программа представляет из себя блокнот-редактор кода с поддержкой семантики языков программирования (список поддерживаемых языков будет расширяться по мере развития проекта). Цель проекта — освоить основные функциональные возможности системы контроля версий в ходе работы над проектом.</para>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md1">
+<title><title>Программные модули</title></title>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md2">
+<title><title>Редактор кода</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Отвечает за основной интерфейс программы</para>
+</listitem><listitem>
+<para>Отвечает за работу с кодом (редактирование, подсветка синтаксиса, форматирование кода)</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md3">
+<title><title>Окно терминала</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Отвечает за интеграцию терминала</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md4">
+<title><title>Анализатор семантики языков</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Анализирует код и разбивает его на семантические блоки</para>
+</listitem><listitem>
+<para>Выполняет проверку структуры кода</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md5">
+<title><title>Модуль поиска и замены</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Инструмент поиска и замены текста в коде</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md6">
+<title><title>Модуль управления темами</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Отвечает за изменение внешнего вида интерфейса при помощи тем оформления</para>
+</listitem><listitem>
+<para>Позволяет загружать новые темы</para>
+</listitem><listitem>
+<para>Позволяет настраивать темы</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__d_e_s_c_r_i_p_t_i_o_n_1autotoc_md7">
+<title><title>Модуль настройки программы</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Содержит основные настройки программы </para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+</section>

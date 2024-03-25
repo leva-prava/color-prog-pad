@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__setting_m_8cs" xml:lang="en-US">
+<title>SettingM.cs File Reference</title>
+<indexterm><primary>SettingM.cs</primary></indexterm>
+<para>
+
+<para>Содержит реализацию класса SettingM. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_setting_m">ColorProgPad.SettingM</link></para>
+
+<para>Представляет класс для работы с настройками. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Содержит реализацию класса SettingM. </para>
+</section>
+</section>

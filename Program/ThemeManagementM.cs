@@ -1,31 +1,43 @@
+/**
+ * @file ThemeManagementM.cs
+ * @brief Содержит реализацию класса ThemeManagementM.
+ */
+
 using System;
 
 namespace ColorProgPad
 {
 
+    /**
+     * @brief Представляет темы интерфейса.
+     */
     enum Theme
     {
-        Light,
-        Dark
+        Light, /**< Светлая тема. */
+        Dark   /**< Тёмная тема. */
     }
 
-    class ThemeStyles
-    {
-        public ConsoleColor BackgroundColor { get; set; }
-        public ConsoleColor ForegroundColor { get; set; }
-        public int FontSize { get; set; }
-    }
 
+    /**
+     * @brief Представляет менеджер тем.
+     */
     class ThemeManagementM
     {
-         private Theme currentTheme;
+        private Theme currentTheme;
         private readonly System.Collections.Generic.Dictionary<Theme, ThemeStyles> themeStylesDictionary;
 
-         public ThemeManager()
+        /**
+         * @brief Конструктор по умолчанию.
+         */
+        public ThemeManagementM()
         {
             themeStylesDictionary = new System.Collections.Generic.Dictionary<Theme, ThemeStyles>();
         }
 
+        /**
+         * @brief Применяет указанную тему.
+         * @param theme Тема, которую следует применить.
+         */
         public void ApplyTheme(Theme theme)
         {
             if (themeStylesDictionary.ContainsKey(theme))
@@ -40,6 +52,11 @@ namespace ColorProgPad
             }
         }
 
+        /**
+         * @brief Конфигурирует стили для указанной темы.
+         * @param theme Тема, для которой требуется настроить стили.
+         * @param styles Стили, которые следует применить.
+         */
         public void ConfigureThemeStyles(Theme theme, ThemeStyles styles)
         {
             if (!themeStylesDictionary.ContainsKey(theme))
@@ -54,6 +71,9 @@ namespace ColorProgPad
             }
         }
 
+        /**
+         * @brief Выводит информацию о текущей теме.
+         */
         public void PrintCurrentTheme()
         {
             Console.WriteLine($"Текущая тема: {currentTheme}");
@@ -68,15 +88,16 @@ namespace ColorProgPad
             }
         }
 
-        private void ApplyStyles(int height, int width)
+        /**
+         * @brief Применяет стили текущей темы.
+         */
+        private void ApplyStyles()
         {
             if (themeStylesDictionary.ContainsKey(currentTheme))
             {
                 ThemeStyles currentStyles = themeStylesDictionary[currentTheme];
                 Console.BackgroundColor = currentStyles.BackgroundColor;
                 Console.ForegroundColor = currentStyles.ForegroundColor;
-                Console.WindowHeight = height;
-                Console.WindowWidth = width; 
                 Console.Clear();
             }
             else

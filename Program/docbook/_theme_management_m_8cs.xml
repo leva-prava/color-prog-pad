@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__theme_management_m_8cs" xml:lang="en-US">
+<title>ThemeManagementM.cs File Reference</title>
+<indexterm><primary>ThemeManagementM.cs</primary></indexterm>
+<para>
+
+<para>Содержит реализацию класса ThemeManagementM. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_theme_management_m">ColorProgPad.ThemeManagementM</link></para>
+
+<para>Представляет менеджер тем. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">ColorProgPad.Theme</link> { <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181a9914a0ce04a7b7b6a8e39bec55064b82">ColorProgPad.Light</link>
+, <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181aa18366b217ebf811ad1886e4f4f865b2">ColorProgPad.Dark</link>
+ }</para>
+
+<para>Представляет темы интерфейса. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Содержит реализацию класса ThemeManagementM. </para>
+</section>
+</section>

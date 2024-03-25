@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_color_prog_pad_1_1_theme_management_m" xml:lang="en-US">
+<title>ColorProgPad.ThemeManagementM Class Reference</title>
+<indexterm><primary>ColorProgPad.ThemeManagementM</primary></indexterm>
+<para>
+
+<para>Представляет менеджер тем. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_color_prog_pad_1_1_theme_management_m_1af8e1ada2ec07253b43a76b2df68549d0"/><emphasis role="strong">ThemeManagementM</emphasis> ()</para>
+
+<para>Конструктор по умолчанию. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_color_prog_pad_1_1_theme_management_m_1af1456c26ecd16cf656491e0508c44178">ApplyTheme</link> (<link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">Theme</link> theme)</para>
+
+<para>Применяет указанную тему. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_color_prog_pad_1_1_theme_management_m_1a1fe80951b734ec3e4d2a5c070bdcb781">ConfigureThemeStyles</link> (<link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">Theme</link> theme, ThemeStyles styles)</para>
+
+<para>Конфигурирует стили для указанной темы. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_color_prog_pad_1_1_theme_management_m_1a464bae8b2c8fdc94eb836d5334f5d975"/>void <emphasis role="strong">PrintCurrentTheme</emphasis> ()</para>
+
+<para>Выводит информацию о текущей теме. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Представляет менеджер тем. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_color_prog_pad_1_1_theme_management_m_1af1456c26ecd16cf656491e0508c44178"/><section>
+    <title>ApplyTheme()</title>
+<indexterm><primary>ApplyTheme</primary><secondary>ColorProgPad.ThemeManagementM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.ThemeManagementM</primary><secondary>ApplyTheme</secondary></indexterm>
+<para><computeroutput>void ColorProgPad.ThemeManagementM.ApplyTheme (<link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">Theme</link> theme)</computeroutput></para><para>
+
+<para>Применяет указанную тему. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>theme</entry><entry>
+<para>Тема, которую следует применить. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_theme_management_m_1a1fe80951b734ec3e4d2a5c070bdcb781"/><section>
+    <title>ConfigureThemeStyles()</title>
+<indexterm><primary>ConfigureThemeStyles</primary><secondary>ColorProgPad.ThemeManagementM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.ThemeManagementM</primary><secondary>ConfigureThemeStyles</secondary></indexterm>
+<para><computeroutput>void ColorProgPad.ThemeManagementM.ConfigureThemeStyles (<link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">Theme</link> theme, ThemeStyles styles)</computeroutput></para><para>
+
+<para>Конфигурирует стили для указанной темы. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>theme</entry><entry>
+<para>Тема, для которой требуется настроить стили. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>styles</entry><entry>
+<para>Стили, которые следует применить. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__theme_management_m_8cs">ThemeManagementM.cs</link></section>
+</section>

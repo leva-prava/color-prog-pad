@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_color_prog_pad" xml:lang="en-US">
+<title>ColorProgPad Namespace Reference</title>
+<indexterm><primary>ColorProgPad</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_code_editor">CodeEditor</link></para>
+
+<para>Представляет основную форму редактора кода. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_search_m">SearchM</link></para>
+
+<para>Класс для отвечающий за поиск и замену текста. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_semantics_analyzer">SemanticsAnalyzer</link></para>
+
+<para>Представляет класс для анализа семантики кода. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_setting_m">SettingM</link></para>
+
+<para>Представляет класс для работы с настройками. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_terminal">Terminal</link></para>
+
+<para>Представляет класс для работы с терминалом. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_color_prog_pad_1_1_theme_management_m">ThemeManagementM</link></para>
+
+<para>Представляет менеджер тем. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">Theme</link> { <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181a9914a0ce04a7b7b6a8e39bec55064b82">Light</link>
+, <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181aa18366b217ebf811ad1886e4f4f865b2">Dark</link>
+ }</para>
+
+<para>Представляет темы интерфейса. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181"/><section>
+    <title>Theme</title>
+<indexterm><primary>Theme</primary><secondary>ColorProgPad</secondary></indexterm>
+<indexterm><primary>ColorProgPad</primary><secondary>Theme</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181">ColorProgPad.Theme</link></computeroutput></para><para>
+
+<para>Представляет темы интерфейса. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Light</primary><secondary>ColorProgPad</secondary></indexterm>
+<indexterm><primary>ColorProgPad</primary><secondary>Light</secondary></indexterm>
+<anchor xml:id="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181a9914a0ce04a7b7b6a8e39bec55064b82"/>Light</entry><entry>
+<para>Светлая тема. </para>
+</entry></row><row><entry><indexterm><primary>Dark</primary><secondary>ColorProgPad</secondary></indexterm>
+<indexterm><primary>ColorProgPad</primary><secondary>Dark</secondary></indexterm>
+<anchor xml:id="_namespace_color_prog_pad_1add523f9d3cb16d8702cfe6afb7ea4181aa18366b217ebf811ad1886e4f4f865b2"/>Dark</entry><entry>
+<para>Тёмная тема. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

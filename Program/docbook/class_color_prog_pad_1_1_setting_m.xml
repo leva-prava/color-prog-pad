@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_color_prog_pad_1_1_setting_m" xml:lang="en-US">
+<title>ColorProgPad.SettingM Class Reference</title>
+<indexterm><primary>ColorProgPad.SettingM</primary></indexterm>
+<para>
+
+<para>Представляет класс для работы с настройками. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_color_prog_pad_1_1_setting_m_1a90c7f19c58ef36edcd14850426235dde">SetSetting</link> (string key, string value)</para>
+
+<para>Устанавливает значение настройки. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_color_prog_pad_1_1_setting_m_1a7692506ee6d5cc30434505015351aacd">GetSetting</link> (string key)</para>
+
+<para>Возвращает значение настройки по ключу. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Представляет класс для работы с настройками. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_color_prog_pad_1_1_setting_m_1a7692506ee6d5cc30434505015351aacd"/><section>
+    <title>GetSetting()</title>
+<indexterm><primary>GetSetting</primary><secondary>ColorProgPad.SettingM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SettingM</primary><secondary>GetSetting</secondary></indexterm>
+<para><computeroutput>string ColorProgPad.SettingM.GetSetting (string key)</computeroutput></para><para>
+
+<para>Возвращает значение настройки по ключу. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>key</entry><entry>
+<para>Ключ настройки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Значение настройки или &quot;Не установлено&quot;, если значение не найдено. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_setting_m_1a90c7f19c58ef36edcd14850426235dde"/><section>
+    <title>SetSetting()</title>
+<indexterm><primary>SetSetting</primary><secondary>ColorProgPad.SettingM</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SettingM</primary><secondary>SetSetting</secondary></indexterm>
+<para><computeroutput>void ColorProgPad.SettingM.SetSetting (string key, string value)</computeroutput></para><para>
+
+<para>Устанавливает значение настройки. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>key</entry><entry>
+<para>Ключ настройки. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>value</entry><entry>
+<para>Значение настройки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__setting_m_8cs">SettingM.cs</link></section>
+</section>

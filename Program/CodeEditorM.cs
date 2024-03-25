@@ -1,19 +1,33 @@
+/**
+ * @file CodeEditor.cs
+ * @brief Содержит реализацию класса CodeEditor.
+ */
+
 using System;
 using System.Windows.Forms;
 using ScintillaNET;
 
 namespace ColorProgPad
 {
+    /**
+     * @brief Представляет основную форму редактора кода.
+     */
     public class CodeEditor : Form
     {
-        private Scintilla codeEditor;
+        private Scintilla codeEditor; /**< Контрол Scintilla для редактирования кода. */
 
+        /**
+         * @brief Инициализация нового экземпляра класса CodeEditor.
+         */
         public CodeEditorForm()
         {
             InitializeComponent();
             InitializeCodeEditor();
         }
 
+        /**
+         * @brief Инициализирует редактор кода.
+         */
         private void InitializeCodeEditor()
         {
             codeEditor = new Scintilla();
@@ -22,32 +36,27 @@ namespace ColorProgPad
             // Настройка Scintilla для поддержки языка C#
             codeEditor.ConfigurationManager.Language = "cs";
 
-            //объявление обработчиков событий
+            // Привязка обработчиков событий
             codeTextBox.KeyDown += CodeTextBox_KeyDown;
 
             Controls.Add(codeEditor);
         }
 
-         //Обработчики событий
+         /**
+         * @brief Обработчик события KeyDown для клавиши Tab.
+         * @param sender Источник события.
+         * @param e Объект KeyEventArgs, содержит данные о событии.
+         */
          private void CodeTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            //Если нажата клавиша Tab, то добавляем отступ в тексте.
+            // Если нажата клавиша Tab, добавляем отступ в тексте.
             if (e.KeyCode == Keys.Tab)
             {
                 int selectionStart = codeTextBox.SelectionStart;
-                codeTextBox.Text = codeTextBox.Text.Insert(selectionStart, "    "); // Вставим отступ (4 пробела).
-                codeTextBox.SelectionStart = selectionStart + 4; // Переместим курсор после вставленного отступа.
-                e.Handled = true; // Предотвратим дальнейшую обработку клавиши Tab.
+                codeTextBox.Text = codeTextBox.Text.Insert(selectionStart, "    "); // Вставляем отступ (4 пробела).
+                codeTextBox.SelectionStart = selectionStart + 4; // Перемещаем курсор после вставленного отступа.
+                e.Handled = true; // Предотвращаем дальнейшую обработку клавиши Tab.
             }
         }
-
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CodeEditorForm());
-        }
-
     }
 }

@@ -1,9 +1,20 @@
+/**
+ * @file Terminal.cs
+ * @brief Содержит реализацию класса Terminal.
+ */
+
 using System;
 
 namespace ColorProgPad
 {
+    /**
+     * @brief Представляет класс для работы с терминалом.
+     */
     class Terminal
     {
+        /**
+         * @brief Запускает терминал.
+         */
         public void Run()
         {
             Console.WriteLine("Приветствую в терминале! Введите 'help' для получения списка команд.");
@@ -16,6 +27,10 @@ namespace ColorProgPad
             }
         }
 
+        /**
+         * @brief Обрабатывает введенную команду.
+         * @param command Введенная команда.
+         */
         private void ProcessCommand(string command)
         {
             switch (command.ToLower())
@@ -35,6 +50,9 @@ namespace ColorProgPad
             }
         }
 
+        /**
+         * @brief Выводит справку по доступным командам.
+         */
         private void DisplayHelp()
         {
             Console.WriteLine("Список команд:");
@@ -43,6 +61,9 @@ namespace ColorProgPad
             Console.WriteLine("- history: Выводит историю введенных команд.");
         }
 
+        /**
+         * @brief Выводит историю введенных команд.
+         */
         private void DisplayHistory()
         {
             Console.WriteLine("История команд:");

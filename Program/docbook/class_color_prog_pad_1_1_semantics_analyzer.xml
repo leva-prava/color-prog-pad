@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_color_prog_pad_1_1_semantics_analyzer" xml:lang="en-US">
+<title>ColorProgPad.SemanticsAnalyzer Class Reference</title>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary></indexterm>
+<para>
+
+<para>Представляет класс для анализа семантики кода. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_color_prog_pad_1_1_semantics_analyzer_1a44dfde9db04baec7c4cb226b59252461">AnalyzeCode</link> (string code)</para>
+
+<para>Анализирует предоставленный код. </para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_color_prog_pad_1_1_semantics_analyzer_1a53540de362d2e002890e3da1673bdf50">GetFunctions</link> ()</para>
+
+<para>Возвращает список функций в коде. </para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_color_prog_pad_1_1_semantics_analyzer_1a74c6ea87da1ce72be34bcf4c157fa4b7">GetVariables</link> ()</para>
+
+<para>Возвращает список переменных в коде. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_color_prog_pad_1_1_semantics_analyzer_1abbe70bf78c95a65a37a16dc6871c9b48">HasConditionalStatements</link> ()</para>
+
+<para>Проверяет наличие условных операторов в коде. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_color_prog_pad_1_1_semantics_analyzer_1a6077d86352368c04ba5fd57e43cbbb77">HasLoops</link> ()</para>
+
+<para>Проверяет наличие циклов в коде. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_color_prog_pad_1_1_semantics_analyzer_1a524efaf1edbd9ae89ffe1e74857eee22">AnalyzeExpressionsInFunctions</link> ()</para>
+
+<para>Анализирует выражения в функциях. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Представляет класс для анализа семантики кода. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_color_prog_pad_1_1_semantics_analyzer_1a44dfde9db04baec7c4cb226b59252461"/><section>
+    <title>AnalyzeCode()</title>
+<indexterm><primary>AnalyzeCode</primary><secondary>ColorProgPad.SemanticsAnalyzer</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary><secondary>AnalyzeCode</secondary></indexterm>
+<para><computeroutput>void ColorProgPad.SemanticsAnalyzer.AnalyzeCode (string code)</computeroutput></para><para>
+
+<para>Анализирует предоставленный код. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>code</entry><entry>
+<para>Код для анализа. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_semantics_analyzer_1a524efaf1edbd9ae89ffe1e74857eee22"/><section>
+    <title>AnalyzeExpressionsInFunctions()</title>
+<indexterm><primary>AnalyzeExpressionsInFunctions</primary><secondary>ColorProgPad.SemanticsAnalyzer</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary><secondary>AnalyzeExpressionsInFunctions</secondary></indexterm>
+<para><computeroutput>string ColorProgPad.SemanticsAnalyzer.AnalyzeExpressionsInFunctions ( )</computeroutput></para><para>
+
+<para>Анализирует выражения в функциях. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Сообщение об успешном выполнении анализа. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_semantics_analyzer_1a53540de362d2e002890e3da1673bdf50"/><section>
+    <title>GetFunctions()</title>
+<indexterm><primary>GetFunctions</primary><secondary>ColorProgPad.SemanticsAnalyzer</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary><secondary>GetFunctions</secondary></indexterm>
+<para><computeroutput>List&lt; string &gt; ColorProgPad.SemanticsAnalyzer.GetFunctions ( )</computeroutput></para><para>
+
+<para>Возвращает список функций в коде. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Список функций. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_semantics_analyzer_1a74c6ea87da1ce72be34bcf4c157fa4b7"/><section>
+    <title>GetVariables()</title>
+<indexterm><primary>GetVariables</primary><secondary>ColorProgPad.SemanticsAnalyzer</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary><secondary>GetVariables</secondary></indexterm>
+<para><computeroutput>List&lt; string &gt; ColorProgPad.SemanticsAnalyzer.GetVariables ( )</computeroutput></para><para>
+
+<para>Возвращает список переменных в коде. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Список переменных. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_semantics_analyzer_1abbe70bf78c95a65a37a16dc6871c9b48"/><section>
+    <title>HasConditionalStatements()</title>
+<indexterm><primary>HasConditionalStatements</primary><secondary>ColorProgPad.SemanticsAnalyzer</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary><secondary>HasConditionalStatements</secondary></indexterm>
+<para><computeroutput>bool ColorProgPad.SemanticsAnalyzer.HasConditionalStatements ( )</computeroutput></para><para>
+
+<para>Проверяет наличие условных операторов в коде. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true, если есть условные операторы, в противном случае - false. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_color_prog_pad_1_1_semantics_analyzer_1a6077d86352368c04ba5fd57e43cbbb77"/><section>
+    <title>HasLoops()</title>
+<indexterm><primary>HasLoops</primary><secondary>ColorProgPad.SemanticsAnalyzer</secondary></indexterm>
+<indexterm><primary>ColorProgPad.SemanticsAnalyzer</primary><secondary>HasLoops</secondary></indexterm>
+<para><computeroutput>bool ColorProgPad.SemanticsAnalyzer.HasLoops ( )</computeroutput></para><para>
+
+<para>Проверяет наличие циклов в коде. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true, если есть циклы, в противном случае - false. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__semantics_analyzer_8cs">SemanticsAnalyzer.cs</link></section>
+</section>
